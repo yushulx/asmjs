@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+    <h1>Custom Page</h1>
+    <button onclick="native()">click</button>
+    <script>
+        // called when the runtime is ready
+        var Module = {
+            onRuntimeInitialized: function () {
+                alert('onRuntimeInitialized');
+            }
+        };
+
+        // called from main()
+        function onLoaded() {
+            alert('Module is loaded');
+        }
+
+        function native() {
+            var content = Module.ccall('world', 'string');
+            alert(content);
+        }
+    </script>
+    <script async type="text/javascript" src="hello.js"></script>
+</body>
+
+</html>
