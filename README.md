@@ -13,4 +13,7 @@
 * http://webassembly.org
 * https://developer.mozilla.org/en-US/docs/WebAssembly
 
+## Blog
+[Learning Emscripten: Compile C/C++ to JavaScript][0]
 
+[0]:http://www.codepool.biz/emscripten-compile-cc-javascript.html
